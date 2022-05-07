@@ -1,1 +1,1 @@
-web: gunicorn teenovator-registration2022.wsgi
+web: gunicorn registration.wsgi
