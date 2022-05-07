@@ -1,1 +1,1 @@
-web: gunicorn registration.registration.wsgi
+web: cd registration/ && gunicorn registration.wsgi
