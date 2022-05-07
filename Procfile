@@ -1,1 +1,1 @@
-web: gunicorn reon.wsgi
+web: gunicorn registration.registration.wsgi
