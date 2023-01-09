@@ -1,0 +1,44 @@
+.container {
+    width: 65%;
+    height: 8vh;
+    margin: 3vh auto;
+    border-radius: 200px;
+    background-color: #3266c1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+
+        .teenLogo {
+            max-height: 5vh;
+        }
+    }
+}
+
+.banner {
+    margin: 5vh auto 10vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bannerLogo {
+        display: block;
+        margin: auto;
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 80% !important;
+    }
+
+    .bannerLogo {
+        display: block;
+        margin: auto;
+        max-width: 100% !important;
+    }
+}
