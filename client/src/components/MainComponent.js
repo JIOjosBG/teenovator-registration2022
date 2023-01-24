@@ -31,6 +31,7 @@ const SelectField = ({ label, ...props }) => {
 const MainComponent = () => {
     return (
         <>
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
             <Formik
                 initialValues={{
                     firstName: '',
@@ -129,7 +130,7 @@ const MainComponent = () => {
                             <option value="Pernik">Перник</option>
                             <option value="Kazanlak">Казанлък</option>
                             <option value="Gorna Oryahovitsa">Горна Оряховица</option>
-                            <option value="Haskovo">Хасково"</option>
+                            <option value="Haskovo">Хасково</option>
                         </SelectField>
 
                         <button className={styles.button}
