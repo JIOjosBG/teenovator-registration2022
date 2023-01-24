@@ -42,11 +42,14 @@ const MainComponent = () => {
                 validationSchema={Yup.object({
                     firstName: Yup.string()
                         .min(2, 'Най-малко 2 символа са нужни!')
+                        .max(128,"MAX 128 SIMVOLA")
                         .required('Задължително поле!'),
                     lastName: Yup.string()
                         .min(3, 'Най-малко 3 символа са нужни!')
+                        .max(128,"MAX 128 SIMVOLA")
                         .required('Задължително поле!'),
                     projectName: Yup.string()
+                        .max(128,"MAX 128 SIMVOLA")
                         .required('Задължително поле!'),
                     town: Yup.string()
                         .required('Задължително поле!'),
@@ -55,7 +58,7 @@ const MainComponent = () => {
                 })}
                 onSubmit={async (values) => {
                     console.log("NE PIPAI TUK AUTIST")
-                    const a = await fetch('http://localhost:8000/api/create/', {
+                    const a = await fetch('http://172.104.202.30:8000/api/create/', {
                         method: 'POST', 
                         mode: 'cors',
                         headers: {

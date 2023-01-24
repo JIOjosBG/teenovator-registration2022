@@ -1,6 +1,6 @@
 import styles from '../styles/Navbar.module.scss';
 import image from '../assets/teenovator-logo.png';
-import banner from '../assets/Teenovator-1920x1080.png';
+import banner from '../assets/Teenovator-1920x1080_2.png';
 
 const Navbar = () => {
     return (
