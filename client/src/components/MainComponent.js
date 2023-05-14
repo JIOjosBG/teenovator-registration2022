@@ -59,7 +59,7 @@ const MainComponent = () => {
                 })}
                 onSubmit={async (values) => {
                     console.log("NE PIPAI TUK AUTIST")
-                    const a = await fetch('http://172.104.202.30:8000/api/create/', {
+                    const a = await fetch('http://localhost:8000/api/create/', {
                         method: 'POST', 
                         mode: 'cors',
                         headers: {
